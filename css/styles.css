@@ -23,6 +23,7 @@ p {
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 body {
@@ -154,8 +155,20 @@ img {
 }
 
 .mail{
-    display: inline-block;
+    display: flex;
     padding: 32px 0;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.mail-icon{
+    margin-right: 10px;
+    fill: var(--main-color);
+}
+
+.mail:hover .mail-icon,
+.mail:focus .mail-icon{
+    fill:var(--tertiary-color);
 }
 
 .mail:hover,
@@ -164,8 +177,20 @@ img {
 } 
 
 .tel{
-    display: inline-block;
+    display: flex;
     padding: 32px; 0;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.tel-icon{
+    margin-right: 10px;
+    fill: var(--main-color)
+}
+
+.tel:hover .tel-icon,
+.tel:focus .tel-icon{
+    fill:var(--tertiary-color)
 }
 
 .tel:hover,
@@ -245,41 +270,15 @@ background-color: #188CE8;
     width:calc((100% - 90px) / 4);
 }
 
-.features-item::before {
-    content: '';
-    display: block;
+.features-top {
+    width: 270px;
     height: 120px;
-    background-color:#F5F4FA;
+    background-color: var(--seventh-color);
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
     border-radius: 4px;
-}
-
-.first::before {
-    background-image: url(../images/antenna.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-}
-
-.second::before {
-    background-image: url(../images/clock.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-}
-
-.third::before {
-    background-image: url(../images/diagram.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-}
-
-.fourth::before {
-    background-image: url(../images/astronaut.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
 }
 
 .features-title {
@@ -368,8 +367,19 @@ background-color: #188CE8;
     text-align: center;
 }
 
+/* clients */
+
+.clients-title {
+    color:var(--secondary-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
 /* footer */
 .footer {
+    display: block;
     background-color: var(--sixth-color);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -418,6 +428,15 @@ background-color: #188CE8;
 .footer-tel:hover,
 .footer-tel:focus{
     color:var(--tertiary-color);
+}
+
+.title-socials {
+    color: var(--fourth-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1,14;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 /* ПОРТФОЛІО */

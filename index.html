@@ -25,8 +25,20 @@
         </ul>
         </nav>
         <ul class="header-contact list">
-            <li class="nav-item"><a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com</a></li>
-            <li class="nav-item"><a href="tel:+380961111111" class="tel link">+380961111111</a></li>
+            <li class="nav-item">
+                <a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com
+                    <svg class="mail-icon" width="16px" height="12px">
+                        <use href="./images/symbol-defs.svg#envelope"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="tel:+380961111111" class="tel link">+380961111111
+                    <svg class="tel-icon" width="10px" height="16px">
+                        <use href="./images/symbol-defs.svg#smartphone"></use>
+                    </svg>
+                </a>
+            </li>
         </ul>
     </div>
     </header>
@@ -41,10 +53,38 @@
         <div class="container">
             <h2 class="main-features">Наші якості</h2>
             <ul class="features-list list">
-                <li class="features-item first"><h3 class="features-title">Увага до деталей</h3><p class="features-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
-                <li class="features-item second"><h3 class="features-title">Планування</h3><p class="features-text">Так само консультація з широким активом значною мірою зумовлює.</p></li>
-                <li class="features-item third"><h3 class="features-title">Сучасні технології</h3><p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
-                <li class="features-item fourth"><h3 class="features-title">Пунктуальнысть</h3><p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
+                <li class="features-item first">
+                        <div class="features-top">
+                            <svg class="features-icon" width="70" height="70">
+                                <use href="./images/symbol-defs.svg#antenna"></use>
+                            </svg>
+                        </div>
+                    <h3 class="features-title">Увага до деталей</h3><p class="features-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                </li>
+                <li class="features-item second">
+                    <div class="features-top">
+                        <svg class="features-icon" width="70" height="70">
+                            <use href="./images/symbol-defs.svg#clock"></use>
+                        </svg>
+                    </div>
+                    <h3 class="features-title">Планування</h3><p class="features-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                </li>
+                <li class="features-item third">
+                    <div class="features-top">
+                        <svg class="features-icon" width="70" height="70">
+                            <use href="./images/symbol-defs.svg#diagram"></use>
+                        </svg>
+                    </div>
+                    <h3 class="features-title">Сучасні технології</h3><p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                </li>
+                <li class="features-item fourth">
+                    <div class="features-top">
+                        <svg class="features-icon" width="70" height="70">
+                            <use href="./images/symbol-defs.svg#astronaut"></use>
+                        </svg>
+                    </div>
+                    <h3 class="features-title">Пунктуальнысть</h3><p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                </li>
             </ul>
         </div>
     </section>
@@ -81,9 +121,22 @@
             </ul>
         </div>
     </section>
+    <section class="clients-section section">
+        <div class="container">
+            <h2 class="clients-title">Постійні клієнти</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
     </main>
     <footer class="footer">
-       <div class="container">
+       <div class="container footer-container">
                 <a href="./index.html" class="footer-logo link">
                     <span class="web-logo">Web</span>Studio
                 </a>
@@ -94,6 +147,15 @@
                     <li><a href="tel:+380961111111" class="footer-tel link">+380961111111</a></li>
                 </ul>
                 </address>
+            </div>
+            <div class="container socials">
+                <span class="title-socials">приєднуйтесь</span>
+                <ul list-socials>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
     </footer>
 </body>
