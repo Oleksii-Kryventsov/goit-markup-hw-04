@@ -456,12 +456,15 @@ background-color: #188CE8;
 
 /* footer */
 .footer {
-    display: flex;
     background-color: var(--sixth-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
 
 .footer-logo {
     color: var(--fourth-color);
@@ -522,7 +525,6 @@ background-color: #188CE8;
 }
 
 .socials-footer{
-    display: flex;
     margin-left: 70px;
 }
 
@@ -530,6 +532,8 @@ background-color: #188CE8;
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 20px;
+    align-items: baseline;
 }
 
 .footer-item-socials {
